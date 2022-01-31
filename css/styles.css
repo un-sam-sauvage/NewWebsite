@@ -7,6 +7,9 @@ h3 {
     font-size: 2rem;
     margin: 4%;
 }
+body{
+    overflow-x: hidden;
+}
 
 /* ================================================================= */
 /* TOP */
@@ -20,13 +23,19 @@ h3 {
     width: 75%;
     text-align: left;
     font-size: 3.5em;
-    padding: 5% 13%;
+    padding: 3% 13%;
 }
 
 #top th:nth-child(1) p {
     text-align: center;
 }
-
+.orange-top{
+    width : 100vw;
+    height : 100vh;
+    position : absolute;
+    z-index: -1;
+    background-image: -webkit-linear-gradient(45deg, white 70%, orange 30%);
+}
 /* ================================================================= */
 /* MIDDLE */
 /* ================================================================= */
@@ -49,20 +58,22 @@ h3 {
     padding: 5% 5%;
 }
 
-#abilities {
-    padding: 0 10%;
-}
-
-
 
 #abilities table {
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 #abilities tr {
     height: 80px;
+}
+#abilities tr:nth-child(2){
+    position: relative;
+    left : 2vw;
+}
+#abilities tr:nth-child(2) td{
+    padding : 0 1vw;
 }
 
 /* ================================================================= */
