@@ -109,14 +109,18 @@ body {
 /* ================================================================= */
 
 #projet .txt {
-    margin: 10%;
+    margin: 2.5% 10%;
     text-align: left;
     padding: 5vw;
     font-size: 1.35vw;
 }
 
 #projet .txt p {
-    margin: 2vh;
+    margin: 2%;
+}
+#projet video{
+    width : 25vw;
+    margin : 2% 22.5vw;
 }
 
 /* ================================================================= */
@@ -201,4 +205,11 @@ body {
 
 .header {
     height: 35%;
+}
+
+footer{
+    padding-left : 42vw;
+    padding-top : 5%;
+    font-size : 1.1vw;
+    font-weight: bold;
 }
