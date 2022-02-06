@@ -73,11 +73,16 @@ p,td,a,footer{
 
 #about {
     width: 45vw;
-    padding: 5% 5.5vw;
+    padding: 3% 5.5vw;
+    background-color: #002C50 ;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 
-
+#about h3{
+    color: #e2e2e2;
+}
 #about p {
     padding-top: 3.5vw;
     padding-left: 1vw;
@@ -86,11 +91,12 @@ p,td,a,footer{
     font-weight: normal;
     line-height: 1.5;
     letter-spacing: .5;
+    color: #e2e2e2;
 }
 
 #abilities {
     width: 42vw;
-    padding: 5% 5%;
+    padding: 3% 5%;
 }
 
 
@@ -133,10 +139,15 @@ p,td,a,footer{
 #projet .txt p {
     margin: 2%;
 }
-
+#projet .video{
+    background-color: #002C50;
+    width : 100vw;
+    position: relative;
+    left : -15vw;
+}
 #projet video {
     width: 25vw;
-    margin: 2% 22.5vw;
+    margin: 2% 38vw;
 }
 
 /* ================================================================= */
@@ -150,9 +161,9 @@ p,td,a,footer{
 
 #links {
     width: 25vw;
-    padding-top: 20%;
-    padding-left: 1vw;
     color: black;
+    text-align: center;
+    padding-top: 20%;
 }
 
 #links i {
@@ -161,6 +172,8 @@ p,td,a,footer{
     color: black;
     transition: .2s ease-in-out;
 }
+
+
 #links i:hover{
     color : rgb(59, 59, 59);
 }
@@ -185,27 +198,32 @@ p,td,a,footer{
     width: 25vw;
     border: 2px solid black;
     border-radius: 20px;
+    background-color: #002C50;
 }
 
 .e-art {
     font-size: 1.2vw;
     margin: 0 2vw;
     width: 25vw;
-    border: 2px solid black;
+    border: 2px solid #011627;
     border-radius: 20px;
     padding: 2%;
+    background-color: #002C50;
 }
 
-
+.udemy p,.udemy a,.e-art p , .petit-boulot h5, .petit-boulot p{
+    color: #e2e2e2;
+}
 .less-important {
     display: inline-flex;
 }
 
 .petit-boulot {
+    background-color: #002C50;
     width: 20vw;
     padding: 2% 3%;
     margin: 4vw .5vw;
-    border: 2px solid black;
+    border: 2px solid #011627;
     border-radius: 20px;
 }
 
