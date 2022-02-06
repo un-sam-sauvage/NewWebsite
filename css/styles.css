@@ -7,11 +7,26 @@ h3 {
     font-size: 2vw;
     margin: 4%;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color : #011627
 }
-
+h5{
+    font-family: 'Rubik', sans-serif;
+    color : #011627
+}
 body {
     overflow-x: hidden;
+    background-color: #e2e2e2;
+    
+
 }
+
+
+p,td,a,footer{
+    font-family: 'Karla', sans-serif;
+    color:#002C50;
+}
+
 
 /* ================================================================= */
 /* TOP */
@@ -20,18 +35,21 @@ body {
 #top {
     width: 100%;
     display: inline-flex;
-    margin-bottom: 25vh;
+    margin-bottom: 10%;
 }
 
 #name {
+    font-family: 'Rubik', sans-serif;
     width: 60vw;
     text-align: left;
     font-size: 3.5vw;
     padding: 3% 7vw;
+    color: #011627
 }
 
 #name p {
     text-align: center;
+    font-weight: 300;
 }
 
 #profil-picture {
@@ -44,15 +62,6 @@ body {
     height: 10vw;
 }
 
-
-
-.orange-top {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-    background-image: -webkit-linear-gradient(45deg, white 70%, orange 30%);
-}
 
 /* ================================================================= */
 /* MIDDLE */
@@ -71,11 +80,12 @@ body {
 
 #about p {
     padding-top: 3.5vw;
-    padding-left: 3vw;
+    padding-left: 1vw;
     font-size: 1.5vw;
     text-align: left;
     font-weight: normal;
-    line-height: 1.3;
+    line-height: 1.5;
+    letter-spacing: .5;
 }
 
 #abilities {
@@ -103,38 +113,35 @@ body {
 #abilities tr:nth-child(2) td {
     padding: 0 1vw;
 }
+#abilities tr:nth-child(1) td:last-child{
+    padding-left: 5%;
+}
 
 /* ================================================================= */
 /* PROJECT */
 /* ================================================================= */
 
 #projet .txt {
-    margin: 2.5% 10%;
+    margin: 2% 10%;
     text-align: left;
     padding: 5vw;
     font-size: 1.35vw;
+    line-height: 1.5;
+    letter-spacing: .3;
 }
 
 #projet .txt p {
     margin: 2%;
 }
-#projet video{
-    width : 25vw;
-    margin : 2% 22.5vw;
+
+#projet video {
+    width: 25vw;
+    margin: 2% 22.5vw;
 }
 
 /* ================================================================= */
 /* BOTTOM */
 /* ================================================================= */
-
-.orange-bottom {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-    background-image: -webkit-linear-gradient(45deg, white 70%, orange 30%);
-    transform: rotate(180deg);
-}
 
 #bottom {
     width: 100%;
@@ -143,13 +150,19 @@ body {
 
 #links {
     width: 25vw;
-    padding-top : 20%;
-    padding-left: 5%;
+    padding-top: 20%;
+    padding-left: 1vw;
+    color: black;
 }
 
 #links i {
     font-size: 3vw;
     margin: 1vw;
+    color: black;
+    transition: .2s ease-in-out;
+}
+#links i:hover{
+    color : rgb(59, 59, 59);
 }
 
 
@@ -161,7 +174,10 @@ body {
 .important {
     display: inline-flex;
 }
-
+.important p,.important a{
+    line-height: 1.2;
+    letter-spacing: .3;
+}
 .udemy {
     margin: 0 2vw;
     padding: 2%;
@@ -207,9 +223,10 @@ body {
     height: 35%;
 }
 
-footer{
-    padding-left : 42vw;
-    padding-top : 5%;
-    font-size : 1.1vw;
+footer {
+    padding-left: 42vw;
+    padding-top: 5%;
+    margin-bottom: 2%;
+    font-size: 1.1vw;
     font-weight: bold;
 }
