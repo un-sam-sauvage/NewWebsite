@@ -8,23 +8,28 @@ h3 {
     margin: 4%;
     text-align: center;
     font-family: 'Rubik', sans-serif;
-    color : #011627
+    color: #011627
 }
-h5{
+
+h5 {
     font-family: 'Rubik', sans-serif;
-    color : #011627
+    color: #011627
 }
+
 body {
     overflow-x: hidden;
     background-color: #e2e2e2;
-    
+
 
 }
 
 
-p,td,a,footer{
+p,
+td,
+a,
+footer {
     font-family: 'Karla', sans-serif;
-    color:#002C50;
+    color: #002C50;
 }
 
 
@@ -74,15 +79,16 @@ p,td,a,footer{
 #about {
     width: 45vw;
     padding: 3% 5.5vw;
-    background-color: #002C50 ;
+    background-color: #002C50;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 
 
-#about h3{
+#about h3 {
     color: #e2e2e2;
 }
+
 #about p {
     padding-top: 3.5vw;
     padding-left: 1vw;
@@ -119,7 +125,8 @@ p,td,a,footer{
 #abilities tr:nth-child(2) td {
     padding: 0 1vw;
 }
-#abilities tr:nth-child(1) td:last-child{
+
+#abilities tr:nth-child(1) td:last-child {
     padding-left: 5%;
 }
 
@@ -139,12 +146,13 @@ p,td,a,footer{
 #projet .txt p {
     margin: 2%;
 }
-#projet .video{
+
+#projet .video {
     background-color: #002C50;
-    width : 100vw;
-    position: relative;
-    left : -15vw;
+    width: 100%;
+    left: -15vw;
 }
+
 #projet video {
     width: 25vw;
     margin: 2% 38vw;
@@ -171,13 +179,13 @@ p,td,a,footer{
     color: #011627;
     transition: .2s ease-in-out;
     width: 5vw;
-    height : 8vh;
+    height: 8vh;
     padding-top: 2%;
 }
 
 
-#links i:hover{
-    border-radius : 50px;
+#links i:hover {
+    border-radius: 50px;
     background-color: #011627;
     color: #e2e2e2;
     width: 5vw;
@@ -192,10 +200,13 @@ p,td,a,footer{
 .important {
     display: inline-flex;
 }
-.important p,.important a{
+
+.important p,
+.important a {
     line-height: 1.2;
     letter-spacing: .3;
 }
+
 .udemy {
     margin: 0 2vw;
     padding: 2%;
@@ -216,9 +227,14 @@ p,td,a,footer{
     background-color: #002C50;
 }
 
-.udemy p,.udemy a,.e-art p , .petit-boulot h5, .petit-boulot p{
+.udemy p,
+.udemy a,
+.e-art p,
+.petit-boulot h5,
+.petit-boulot p {
     color: #e2e2e2;
 }
+
 .less-important {
     display: inline-flex;
 }
@@ -252,4 +268,25 @@ footer {
     margin-bottom: 2%;
     font-size: 1.1vw;
     font-weight: bold;
+}
+
+@media screen and (max-width : 1000px) {
+
+    #middle {
+        display: block;
+    }
+
+    #bottom {
+        display: block;
+        width: 100vw;
+    }
+
+    #experience {
+        width: 100%;
+    }
+    #about{
+        width: 100%;
+        padding:5%;
+        border-radius: 0;
+    }
 }
