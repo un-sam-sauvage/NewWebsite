@@ -168,14 +168,19 @@ p,td,a,footer{
 
 #links i {
     font-size: 3vw;
-    margin: 1vw;
-    color: black;
+    color: #011627;
     transition: .2s ease-in-out;
+    width: 5vw;
+    height : 8vh;
+    padding-top: 2%;
 }
 
 
 #links i:hover{
-    color : rgb(59, 59, 59);
+    border-radius : 50px;
+    background-color: #011627;
+    color: #e2e2e2;
+    width: 5vw;
 }
 
 
