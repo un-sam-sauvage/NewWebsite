@@ -16,13 +16,11 @@ h5 {
     color: #011627
 }
 
-body {
+body,
+html {
     overflow-x: hidden;
     background-color: #e2e2e2;
-
-
 }
-
 
 p,
 td,
@@ -272,6 +270,13 @@ footer {
 
 @media screen and (max-width : 1000px) {
 
+
+
+
+    /* ================================================================= */
+    /*  MIDDLE */
+    /* ================================================================= */
+
     #middle {
         display: block;
     }
@@ -284,9 +289,100 @@ footer {
     #experience {
         width: 100%;
     }
-    #about{
-        width: 100%;
-        padding:5%;
+
+    #about {
+        width: 90%;
+        padding: 5%;
         border-radius: 0;
+        margin-bottom: 5%;
+    }
+
+    #abilities {
+        width: 98%;
+    }
+
+    h3 {
+        margin-top: 0;
+        font-size: 3vw;
+
+    }
+
+    #about p {
+        padding: 0 5%;
+        font-size: 2vw;
+    }
+
+    #abilities {
+        padding: 2%;
+    }
+
+    #abilities table {
+        width: 70%;
+        margin-left: 11vw;
+    }
+
+    #abilities td {
+        font-size: 2vw;
+    }
+
+    #abilities tr {
+        height: 80px;
+    }
+
+    #abilities tr:nth-child(2) {
+        left: 6vw;
+    }
+
+    /* ================================================================= */
+    /* PROJET */
+    /* ================================================================= */
+
+    #projet .txt {
+        margin: 3%;
+        font-size: 2vw;
+    }
+
+
+
+    /* ================================================================= */
+    /* BOTTOM */
+    /* ================================================================= */
+
+    #links {
+        width: 100%;
+        position: relative;
+        top: 90vh;
+    }
+    #links i {
+        font-size: 5vw;
+        margin: 2%;
+    }
+
+    #experience {
+        position: relative;
+        top: -40vh;
+    }
+
+    .important {
+        width: 100%;
+        padding: 0 15%;
+    }
+
+    .less-important {
+        width: 100%;
+        padding: 0 1%
+    }
+    .udemy,.e-art{
+        font-size: 1.5vw;
+    }
+    .petit-boulot{
+        margin: 3%;
+        width: 100%;
+    }
+    .petit-boulot h5{
+        font-size: 2vw;
+    }
+    .petit-boulot p{
+        font-size: 1.5vw;
     }
 }
