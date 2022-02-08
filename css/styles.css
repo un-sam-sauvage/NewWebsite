@@ -309,7 +309,7 @@ footer {
 
     #about p {
         padding: 0 5%;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     #abilities {
@@ -322,7 +322,7 @@ footer {
     }
 
     #abilities td {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     #abilities tr {
@@ -339,7 +339,7 @@ footer {
 
     #projet .txt {
         margin: 3%;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
 
@@ -351,7 +351,7 @@ footer {
     #links {
         width: 100%;
         position: relative;
-        top: 90vh;
+        top: 600px;
     }
     #links i {
         font-size: 5vw;
@@ -360,7 +360,7 @@ footer {
 
     #experience {
         position: relative;
-        top: -40vh;
+        top: -250px;
     }
 
     .important {
@@ -373,16 +373,27 @@ footer {
         padding: 0 1%
     }
     .udemy,.e-art{
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
     .petit-boulot{
         margin: 3%;
         width: 100%;
     }
     .petit-boulot h5{
-        font-size: 2vw;
+        font-size: 2.5vw;
+        margin-bottom: 10%;
     }
     .petit-boulot p{
-        font-size: 1.5vw;
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:850px) {
+    #links{
+        top : 450px;
+    }
+}
+@media screen and (max-width: 666px){
+    #links{
+        top : 350px;
     }
 }
