@@ -351,7 +351,7 @@ footer {
     #links {
         width: 100%;
         position: relative;
-        top: 600px;
+        top: 70vw;
     }
     #links i {
         font-size: 5vw;
@@ -360,7 +360,7 @@ footer {
 
     #experience {
         position: relative;
-        top: -250px;
+        top: -30vw;
     }
 
     .important {
@@ -387,13 +387,8 @@ footer {
         font-size: 2vw;
     }
 }
-@media screen and (max-width:850px) {
+@media screen and (max-width:580px) {
     #links{
-        top : 450px;
-    }
-}
-@media screen and (max-width: 666px){
-    #links{
-        top : 350px;
+        top : 75vw;
     }
 }
