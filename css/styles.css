@@ -38,7 +38,7 @@ footer {
 #top {
     width: 100%;
     display: inline-flex;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 #name {
@@ -65,6 +65,33 @@ footer {
     height: 10vw;
 }
 
+#language {
+    text-align: center;
+    margin-bottom: 5vw;
+    display: inline-flex;
+    padding : 0 47vw;
+}
+
+#language a {
+    font-size: 1.5vw;
+    margin : 0 1vw;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+#language a:after{
+    display: block;
+    width: 100%;
+    background-color: #002C50;
+    content: " ";
+    height: 1px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+#language a:hover::after{
+    transform: scaleX(1);
+}
 
 /* ================================================================= */
 /* MIDDLE */
@@ -175,7 +202,7 @@ footer {
 #links i {
     font-size: 3vw;
     color: #011627;
-    transition: .2s ease-in-out;
+    transition: .5s ease-in-out;
     width: 5vw;
     height: 8vh;
     padding-top: 2%;
@@ -186,7 +213,6 @@ footer {
     border-radius: 50px;
     background-color: #011627;
     color: #e2e2e2;
-    width: 5vw;
 }
 
 
@@ -353,6 +379,7 @@ footer {
         position: relative;
         top: 70vw;
     }
+
     #links i {
         font-size: 5vw;
         margin: 2%;
@@ -372,23 +399,29 @@ footer {
         width: 100%;
         padding: 0 1%
     }
-    .udemy,.e-art{
+
+    .udemy,
+    .e-art {
         font-size: 2vw;
     }
-    .petit-boulot{
+
+    .petit-boulot {
         margin: 3%;
         width: 100%;
     }
-    .petit-boulot h5{
+
+    .petit-boulot h5 {
         font-size: 2.5vw;
         margin-bottom: 10%;
     }
-    .petit-boulot p{
+
+    .petit-boulot p {
         font-size: 2vw;
     }
 }
+
 @media screen and (max-width:580px) {
-    #links{
-        top : 75vw;
+    #links {
+        top: 75vw;
     }
 }
