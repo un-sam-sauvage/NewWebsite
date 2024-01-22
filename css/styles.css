@@ -44,11 +44,29 @@ p {
 	opacity: 0;
 }
 
+#language {
+	display: flex;
+	justify-content: flex-end;
+	gap: 25px;
+	padding-right: 10%;
+	padding-top: 2%;
+	margin-bottom: 20px
+}
+
+#language > a{
+	color: var(--bleu-principal);
+	transition: .25s;
+	text-decoration: none;
+	padding: 1%;
+	cursor: none;
+}
+
 #top {
 	display: flex;
-	align-items: center;
+	align-items: top;
 	justify-content: space-between;
-	padding: 2% 10%
+	padding: 0 10%;
+	margin-bottom: 100px;
 }
 
 #name > h1 {
@@ -59,26 +77,12 @@ p {
 #name > p {
 	font-size: 40px;
 	color: var(--bleu-secondaire);
+	width: 70%;
 }
 
 #profile-picture > img{
 	width: 100%;
 	border-radius: 8px;
-}
-
-#language {
-	display: flex;
-	justify-content: center;
-	gap: 50px;
-	margin-bottom: 40px;
-}
-
-#language > a{
-	color: var(--bleu-principal);
-	transition: .25s;
-	text-decoration: none;
-	padding: 1%;
-	cursor: none;
 }
 
 #middle {
@@ -135,7 +139,7 @@ p {
 	display: flex;
 	justify-content: space-evenly;
 	gap: 40px;
-	padding: 0 7%;
+	padding: 0 10%;
 }
 
 #studies, #jobs {
@@ -148,16 +152,46 @@ p {
 	color: var(--bleu-principal);
 }
 
+#experience hr, #jobs hr {
+	margin: 15px
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+	width: 70%;
+	margin: 0 auto;
+}
+.skills div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	max-width: 150px;
+}
+
 .school, .petit-boulot {
 	background-color: var(--bleu-principal);
 	color: var(--main-background-color);
 	border-radius: 8px;
 	width: 30%;
-	padding: 1%;
+	padding: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .school:nth-child(even), .petit-boulot:nth-child(odd) {
 	background-color: var(--bleu-secondaire);
+}
+
+.school:nth-child(2) > .skills > div:last-child, .school:nth-child(3) > .skills > div:last-child {
+	grid-column: 1 / -1;
+	margin: 0 auto;
+
 }
 
 .school:nth-child(even) a:hover {
@@ -181,7 +215,7 @@ p {
 	display: flex;
 	justify-content: center;
 	gap: 20px;
-	font-size: 22px;
+	font-size: 25px;
 	margin-bottom: 20px;
 }
 
