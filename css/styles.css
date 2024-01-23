@@ -153,14 +153,19 @@ p {
 }
 
 #experience hr, #jobs hr {
-	margin: 15px
+	margin: 15px 0
 }
 
-.skills {
+.skills:has(div:nth-child(3)) {
 	display: grid;
 	grid-template-columns: auto auto;
 	align-items: center;
 	justify-content: space-between;
+}
+.skills {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
 	gap: 15px;
 	width: 70%;
 	margin: 0 auto;
@@ -170,7 +175,6 @@ p {
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	max-width: 150px;
 }
 
 .school, .petit-boulot {
@@ -191,7 +195,6 @@ p {
 .school:nth-child(2) > .skills > div:last-child, .school:nth-child(3) > .skills > div:last-child {
 	grid-column: 1 / -1;
 	margin: 0 auto;
-
 }
 
 .school:nth-child(even) a:hover {
@@ -231,4 +234,131 @@ p {
 footer {
 	text-align: center;
 	color: var(--bleu-principal);
+}
+
+@media screen and (max-width: 1150px) {
+	#abilities {
+		min-width: 250px;
+	}
+
+	#studies, #jobs-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.school, .petit-boulot {
+		width: 100%;
+	}
+	.skills {
+		display: flex !important;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.skills div {
+		margin: 0 !important;
+	}
+	#name {
+		width: 50%;
+	}
+	#name > p {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#abilities {
+		min-width: 250px;
+		grid-template-columns: auto auto;
+		justify-content: space-between;
+	}
+	#about {
+		padding-right: 5%;
+		max-width: 350px;
+	}
+	#abilities div {
+		width: fit-content;
+	}
+	#abilities div:nth-child(4) {
+		grid-row-start: 4;
+		grid-row-end: 5;
+		grid-column: 1 / -1;
+		margin: 0 auto;
+	}
+	#name {
+		position: relative;
+	}
+	#name > p {
+		width: 100%;
+		position: absolute;
+		bottom: -60px;
+		font-size: 24px;
+		white-space: nowrap;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#language {
+		justify-content: space-evenly;
+		gap: 0;
+		padding-right: 0;
+	}
+	#name {
+		width: 100%;
+		text-align: center;
+	}
+
+	#name > h1 {
+		font-size: 40px;
+		width: 100%;
+	}
+	#name > p {
+		white-space: normal;
+	}
+	#profile-picture {
+		display: flex;
+		justify-content: center;
+	}
+	#profile-picture > img {
+		width: 250px;
+	}
+	#top {
+		flex-direction: column-reverse;
+		margin: 0 auto 70px;
+	}
+	#middle {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+	#middle {
+		padding: 0 10%;
+	}
+	#about{
+		width: 100%;
+		border-radius: 8px;
+		padding: 2%;
+	}
+	#abilities-div {
+		width: 95%;
+	}
+	#abilities {
+		min-width: auto;
+		grid-template-columns: auto auto auto;
+	}
+	#abilities div:nth-child(4) {
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+	.skills {
+		margin: 0;
+	}
+}
+@media screen and (max-width: 400px) {
+	#profile-picture > img {
+		width: 90%;
+	}
+	.skills {
+		flex-direction: column;
+		margin: 0 auto;
+	}
 }
