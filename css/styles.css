@@ -192,7 +192,7 @@ p {
 	background-color: var(--bleu-secondaire);
 }
 
-.school:nth-child(2) > .skills > div:last-child, .school:nth-child(3) > .skills > div:last-child {
+.school:nth-child(1) > .skills > div:last-child, .school:nth-child(3) > .skills > div:last-child {
 	grid-column: 1 / -1;
 	margin: 0 auto;
 }
@@ -354,9 +354,6 @@ footer {
 	}
 }
 @media screen and (max-width: 400px) {
-	#profile-picture > img {
-		width: 90%;
-	}
 	.skills {
 		flex-direction: column;
 		margin: 0 auto;
