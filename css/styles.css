@@ -293,6 +293,9 @@ footer {
 		font-size: 24px;
 		white-space: nowrap;
 	}
+	.school, .petit-boulot {
+		padding: 7%;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -336,7 +339,7 @@ footer {
 	#about{
 		width: 100%;
 		border-radius: 8px;
-		padding: 2%;
+		padding: 25;
 	}
 	#abilities-div {
 		width: 95%;
@@ -357,5 +360,11 @@ footer {
 	.skills {
 		flex-direction: column;
 		margin: 0 auto;
+	}
+	#name  {
+		margin-bottom: 50px;
+	}
+	#name > p {
+		top: 110px;
 	}
 }
