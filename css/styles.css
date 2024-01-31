@@ -307,6 +307,7 @@ footer {
 	#name {
 		width: 100%;
 		text-align: center;
+		margin-bottom: 50px;
 	}
 
 	#name > h1 {
@@ -315,6 +316,7 @@ footer {
 	}
 	#name > p {
 		white-space: normal;
+		top: 70px;
 	}
 	#profile-picture {
 		display: flex;
@@ -363,6 +365,10 @@ footer {
 	}
 	#name  {
 		margin-bottom: 50px;
+	}
+	#name > h1 {
+		max-width: 70%;
+		margin: 0 auto;
 	}
 	#name > p {
 		top: 110px;
